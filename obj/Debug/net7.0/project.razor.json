@@ -12922,6 +12922,42 @@
         }
       },
       {
+        "HashCode": 299372330,
+        "Kind": "ITagHelper",
+        "Name": "XTLAB.MyListTagHelper",
+        "AssemblyName": "taghelperexample",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "mylist"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "list-title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ListTitle"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "list-items",
+            "TypeName": "System.Collections.Generic.List<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "ListItems"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "XTLAB.MyListTagHelper",
+          "Common.TypeNamespace": "XTLAB",
+          "Common.TypeNameIdentifier": "MyListTagHelper"
+        }
+      },
+      {
         "HashCode": 2121278972,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",

@@ -1,5 +1,6 @@
 ﻿@page
 @model IndexModel
+@addTagHelper *, taghelperexample
 @{
     ViewData["Title"] = "Home page";
 }
@@ -10,16 +11,28 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<!a asp-page="ViewProduct" asp-route-id="3">
+<a asp-page="ViewProduct" asp-route-id="3">
     xem san pham 3
-</!a>
+</a>
 
 <form>
     <label asp-for="UserName"></label>
     <input asp-for="UserName"/>
-    <hr>
+    @* <hr>
     @Html.Label("UserName")
-    @Html.TextBox("UserName")
+    @Html.TextBox("UserName") *@
 </form>
+
+@{
+   var productlist = new List<String> {
+        "Tên Sản phẩm 1",
+        "Tên Sản phẩm 2",
+        "Tên Sản phẩm 3"
+     };
+}
+<mylist
+    list-title ="Danh sach san pham"
+    list-items = "@productlist">
+</mylist>
 
 
